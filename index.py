@@ -1,5 +1,4 @@
 import random
-import os
 import pygame
 pygame.init()
 pygame.display.set_caption('Basic Snake')
