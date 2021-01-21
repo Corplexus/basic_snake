@@ -14,7 +14,7 @@ git clone https://github.com/Corplexus/basic_snake.git
 All you have to do is run it.
 
 ```python
-python snake.py
+python index.py
 ```
 
 ## Any Bugs???!?!??!?!?!
