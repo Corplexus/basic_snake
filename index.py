@@ -160,17 +160,6 @@ while True:
                 pygame.draw.rect(win, (0, 255, 0), (snake_pos[i][0] * 50, snake_pos[i][1] * 50, 50, 50))
         else:
             pygame.draw.rect(win, (0, 255, 0), (snake_pos[0][0] * 50, snake_pos[0][1] * 50, 50, 50))
-            
-
-    if not game_over:
-        if snake_pos[0][0] * 50 < 0 or snake_pos[0][0] * 50 > 750 or snake_pos[0][1] * 50 < 0 or snake_pos[0][1] * 50 > 750:
-            print("Game Over! - Hit Wall (Score = " + str(snake_length) + ")")
-            right = False
-            left = False
-            down = False
-            up = False
-            move = False
-            game_over = True
 
 
     if snake_pos[0][0] == apple_pos[0] and snake_pos[0][1] == apple_pos[1]:
@@ -197,15 +186,26 @@ while True:
                     break
 
 
-    pygame.draw.rect(win, (255, 0, 0), (apple_pos[0] * 50, apple_pos[1] * 50, 50, 50))
-    pygame.display.update()
-
-    if not game_over:
-        if snake_length == 100:
-            print("Victory! You beat the food chain!")
+        if snake_pos[0][0] * 50 < 0 or snake_pos[0][0] * 50 > 750 or snake_pos[0][1] * 50 < 0 or snake_pos[0][1] * 50 > 750:
+            print("Game Over! - Hit Wall (Score = " + str(snake_length) + ")")
             right = False
             left = False
             down = False
             up = False
             move = False
             game_over = True
+
+
+        if not game_over:
+            if snake_length == 100:
+                print("Victory! You beat the food chain!")
+                right = False
+                left = False
+                down = False
+                up = False
+                move = False
+                game_over = True
+
+
+    pygame.draw.rect(win, (255, 0, 0), (apple_pos[0] * 50, apple_pos[1] * 50, 50, 50))
+    pygame.display.update()
