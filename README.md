@@ -1,10 +1,10 @@
 # Snake
 
-A snake game I made in about an hour just for fun.
+A snake game I made in about an hour just for fun. its dog shit
 
 ## Installation
 
-All you need to do is use [GIT](https://git-scm.com/) to download it.
+All you need to do is use [GIT](https://git-scm.com/) to download it. why would u want to download it
 
 ```bash
 git clone https://github.com/Corplexus/basic_snake.git
@@ -19,7 +19,7 @@ python index.py
 
 ## Any Bugs???!?!??!?!?!
 
-Lol no
+Dog shit program
 
 
 ## License
