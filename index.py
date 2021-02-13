@@ -167,9 +167,8 @@ while True:
         new_apple()
 
     
-    for x in range(len(snake_pos)):
-        if not x - 1 <= snake_length + 1:
-            snake_pos.pop(x - 1)
+    while len(snake_pos) > snake_length:
+        snake_pos.pop()
 
     if not game_over:
         for x in range(len(snake_pos)):
