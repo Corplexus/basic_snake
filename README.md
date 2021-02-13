@@ -11,7 +11,7 @@ git clone https://github.com/Corplexus/basic_snake.git
 ```
 
 ## Usage
-All you have to do is run it.
+All you have to do is run it. (pygame)
 
 ```python
 python index.py
